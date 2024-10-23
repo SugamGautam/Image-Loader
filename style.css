@@ -1,0 +1,125 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1223;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  background-color: rgb(118, 120, 122);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+#search-box {
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  border-color: rgb(108, 109, 109);
+  box-shadow: 0 0 0.2rem black;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(108, 109, 109);
+}
+
+#search-button {
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(2, 87, 57);
+  cursor: pointer;
+  color: white;
+}
+
+.images-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.image-list {
+  margin-bottom: auto;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.image-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image-list:hover img {
+  opacity: 0.8;
+}
+
+.image-list a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#show-more-button {
+  background-color: #008cba;
+  font-size: 18px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .image-list {
+    width: 45%;
+  }
+
+  .images-list {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-list {
+    width: 100%;
+  }
+}
